@@ -2899,13 +2899,14 @@ The Core Facilitator should post a reply to the Technical Scope Forum post and a
 
 The actions specified herein take place as part of the [A.1.9.2.4.2 - Governance Point Creates Executive Sheet Week 1 Monday (Step 2)](298819fe-cc26-49a8-a7cb-3ff83e55f291) step of the Executive Process.
 
-###### A.1.9.2.3.2.1.3.1 - Governance Point Includes Module Deployment In The Executive Sheet [Core]  <!-- UUID: d2a2b598-db4d-44b5-a23b-a7f62cadfa9d -->
+###### A.1.9.2.3.2.1.3.1 - Confirmation Of Module Deployment In The Executive Sheet [Core]  <!-- UUID: 10ccad57-0d04-4d95-89d5-1da66e6172f9 -->
+
+The author of the Forum post usually acts as Content Liaison and confirms in the Executive Sheet see [A.1.9.2.4.5.3 - Confirmation By Content Liaisons](26133c1d-29da-42de-b9a2-00f4e13699f2).
+
+###### A.1.9.2.3.2.1.3.2 - Governance Point Includes Module Deployment In The Executive Sheet [Core]  <!-- UUID: d2a2b598-db4d-44b5-a23b-a7f62cadfa9d -->
 
 The Governance Point should include the module deployment in the Executive Sheet. The "Input Action" describes the high level logic of the Deployment, for example "Add [Module Name] to Chainlog". The Reasoning URL for the "Input Action" should contain a link to the Atlas Edit Proposal Forum post specified in [A.1.9.2.3.2.1.2.1.2 - Technical Scope Forum Post](ef6d73e5-cdcb-48dd-873c-264c07af80bf) and the Authority URL for the "Input Action" should contain a link to Atlas documents. The "Derived Action" is more specific for deployment address and other necessary information. The Reasoning URL for the "Derived Action" should contain a link to the Technical Scope Forum post specified in [A.1.9.2.3.2.1.2.1.2 - Technical Scope Forum Post](ef6d73e5-cdcb-48dd-873c-264c07af80bf) and the Authority URL for the "Derived Action" should contain a link to the approval of the Core Facilitator as specified in [A.1.9.2.3.2.1.2.1.3 - Core Facilitator Approve Inclusion In Executive Vote](d0c4f880-902e-4d32-ac55-f05725753ac1).
 
-###### A.1.9.2.3.2.1.3.2 - Confirmation Of Module Deployment In The Executive Sheet [Core]  <!-- UUID: 10ccad57-0d04-4d95-89d5-1da66e6172f9 -->
-
-The author of the Forum post usually acts as Content Liaison and confirms in the Executive Sheet see [A.1.9.2.4.5.3 - Confirmation By Content Liaisons](26133c1d-29da-42de-b9a2-00f4e13699f2).
 
 ###### A.1.9.2.3.2.1.4 - Populating Content Regarding Module Deployment In Executive Document [Core]  <!-- UUID: fb98f4b8-d45e-47ac-8a88-a3cc1e71c42e -->
 
@@ -3258,10 +3259,6 @@ In every Executive Vote there are recurring items that must always be included. 
 
 The Governance Point is responsible for making sure that the relevant ecosystem actors included in the Executive Process are aware of the deadlines associated with the process. This includes informing them of when the Executive Sheet must be finalized and when final rates must be announced.
 
-###### A.1.9.2.4.2.3.4 - Coordination Checklist For Governance Point [Core]  <!-- UUID: 9d1900e4-49bf-41f1-af94-20b0c770f845 -->
-
-The checklist found at [https://github.com/sky-ecosystem/executive-votes/blob/main/processes/spell-sheet-creation.md](https://github.com/sky-ecosystem/executive-votes/blob/main/processes/spell-sheet-creation.md) outlines the steps for the Governance Point when preparing the Executive Sheet.
-
 ##### A.1.9.2.4.3 - Governance Point Conducts GovOps Meeting Week 1 Tuesday (Step 3) [Core]  <!-- UUID: 0f74afdf-bc2d-4512-9b11-8f5a26511787 -->
 
 On Tuesday week 1, key actors involved in the Executive Process have a gov-ops meeting to discuss the upcoming Executive Vote.
@@ -3317,6 +3314,10 @@ The total amount of token transfers must always be summed up in the Executive Sh
 ###### A.1.9.2.4.3.2.4 - Post-meeting Checklist [Core]  <!-- UUID: 3f90dcbd-8a43-44ce-9c2a-c6efdabcbba7 -->
 
 The checklist found at [https://github.com/sky-ecosystem/executive-votes/blob/main/processes/spell-sheet-creation.md](https://github.com/sky-ecosystem/executive-votes/blob/main/processes/spell-sheet-creation.md) outlines the steps for the post-meeting tasks.
+
+###### A.1.9.2.4.3.2.5 - Coordination Checklist For Governance Point [Core]  <!-- UUID: 9d1900e4-49bf-41f1-af94-20b0c770f845 -->
+
+The checklist found at [https://github.com/sky-ecosystem/executive-votes/blob/main/processes/spell-sheet-creation.md](https://github.com/sky-ecosystem/executive-votes/blob/main/processes/spell-sheet-creation.md) outlines the steps for the Governance Point when preparing the Executive Sheet.
 
 ##### A.1.9.2.4.4 - Governance Point Requests Confirmation Of Executive Sheet Week 1 Wednesday (Step 4) [Core]  <!-- UUID: 3bf7e2f3-a5e4-4bb6-ace7-3b8102a2cab7 -->
 
@@ -33559,6 +33560,19 @@ rate_limit_max_outflow: Some(u64::MAX),
 }
 )`
 
+###### A.6.1.1.3.2.6.1.2.2.2.1.3.2.3 - New Document [Core]  <!-- UUID: bd904ac0-32d2-4592-92cd-3eb01a3ce721 -->
+
+Only an operator with the [A.6.1.1.3.2.6.1.2.2.2.1.1.1 - Default Admin Role](0270b595-8957-4fb2-a9cd-2bc197dc3367) is able to set unlimited rate limit data for a specific key by configuring it with maximum values.
+
+`manage_integration(
+ManageIntegrationArgs {
+status: None,
+description: None,
+rate_limit_slope: Some(0),
+rate_limit_max_outflow: Some(u64::MAX),
+}
+)`
+
 ###### A.6.1.1.3.2.6.1.2.2.2.1.4 - Instance Lifecycle Management [Core]  <!-- UUID: 5fcff9f8-7f6d-427d-a12d-02df83b4db6e -->
 
 The documents herein define processes for invoking (onboarding) new Keel Liquidity Layer Instances and off-boarding existing ones.
@@ -33584,13 +33598,11 @@ ManagePermissionArgs {
 status: PermissionStatus::Suspended,
 can_manage_permissions: false,
 can_invoke_external_transfer: false,
-can_execute_swap: false,
+can_execute_swap: true,
 can_reallocate: false,
-can_freeze_controller: false,
-can_unfreeze_controller: false,
-can_manage_reserves_and_integrations: false,
 can_suspend_permissions: false,
 can_liquidate: false,
+can_invoke_external_transfer: false,
 }
 )`
 
@@ -33650,7 +33662,7 @@ In the future, additional logic will be added herein regarding the strategy by w
 
 The Instances of the Keel Liquidity Layer with `Active` Status are stored herein. The `RRC Framework Full Implementation Coverage` status defines whether the Instance Financial RRC is calculated based on a fully implemented risk model (see [A.3.2.1.1.4.3.1 - Fully Implemented Risk Models](419a1d00-fbae-4d26-bd47-8f57677d8001)) or a pending risk model (see [A.3.2.1.1.4.3.2 - Pending Risk Models](81ca88bf-3f6a-4d10-a3e2-d47cf6636d7d)). If the Instance Financial RRC is calculated based on a fully implemented risk model the status is `Covered`. If the Instance Financial RRC is calculated based on a pending risk model the status is `Pending`.
 
-###### A.6.1.1.3.2.6.1.3.1 - Solana Instances [Core]  <!-- UUID: 77c4c83d-199b-412b-abf5-999b94e93531 -->
+###### A.6.1.1.3.2.6.1.3.1 - Solana Instances Changed [Core]  <!-- UUID: 77c4c83d-199b-412b-abf5-999b94e93531 -->
 
 The Solana Instances of the Keel Liquidity Layer with `Active` Status are stored herein and are organized by target protocol.
 
